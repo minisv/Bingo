@@ -1,6 +1,10 @@
-# 빙고 게임
+# 빙고!
+옆집사는 개 이름 빙고라지요! B! I! N! G! O!
 
-리액트와 타입스크립트로 만든 인터랙티브 빙고 게임입니다.
+![howToUse](howToUse/bingo.gif)
+
+### 라이선스
+- 이 프로젝트는 [CC BY-NC 한글](https://creativecommons.org/licenses/by-nc/4.0/deed.ko), [CC BY-NC English](https://creativecommons.org/licenses/by-nc/4.0/) 를 따릅니다. 누구나 무료로 이용할 수 있지만, 상업적으로 사용해선 안됩니다.
 
 ## 기능
 - 편집 모드와 빙고 모드 간 전환 가능
@@ -18,9 +22,3 @@
 5. 왼쪽 클릭으로 칸을 선택하고, 오른쪽 클릭으로 선택을 해제합니다.
 6. 가로, 세로, 대각선으로 빙고가 완성되면 라인과 메시지가 표시됩니다.
 7. "편집 모드로 전환" 버튼을 클릭하여 다시 편집할 수 있습니다.
-
-## 기술 스택
-
-- React 19.1.0
-- TypeScript 5.8.3
-- Vite 6.3.5
