@@ -144,21 +144,54 @@
 .bingo-line.diagonal-1 {
   width: 6px;
   height: 141%; /* sqrt(2) * 100% */
-  top: 0;
+  top: -20.5%;
   left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  transform-origin: top center;
+  transform: rotate(45deg);
+  transform-origin: center;
   border-radius: 3px;
 }
 
 .bingo-line.diagonal-2 {
   width: 6px;
   height: 141%; /* sqrt(2) * 100% */
-  top: 0;
+  top: -20.5%;
   left: 50%;
-  transform: translateX(-50%) rotate(-45deg);
-  transform-origin: top center;
+  transform: rotate(-45deg);
+  transform-origin: center;
   border-radius: 3px;
+}
+
+.bingo-line.diagonal-1 {
+  animation: bingo-line-appear-diagonal-1 0.5s ease-out forwards;
+}
+.bingo-line.diagonal-2 {
+  animation: bingo-line-appear-diagonal-2 0.5s ease-out forwards;
+}
+
+@keyframes bingo-line-appear-diagonal-1 {
+  0% {
+    opacity: 0;
+    transform-origin: center;
+    transform: rotate(-45deg) scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center;
+    transform: rotate(-45deg) scaleY(1);
+  }
+}
+
+@keyframes bingo-line-appear-diagonal-2 {
+  0% {
+    opacity: 0;
+    transform-origin: center;
+    transform: rotate(45deg) scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center;
+    transform: rotate(45deg) scaleY(1);
+  }
 }
 
 @keyframes bingo-line-appear {

@@ -192,9 +192,9 @@ const BingoGame: React.FC = () => {
           } else if (type === 'col') {
             className = 'bingo-line vertical';
             style = { left: `calc(${Number(index) * 100 / cols}% + ${50 / cols}%)` };
-          } else if (type === 'diag-1') {
+          } else if (type === 'diag' && index === '1') {
             className = 'bingo-line diagonal-1';
-          } else if (type === 'diag-2') {
+          } else if (type === 'diag' && index === '2') {
             className = 'bingo-line diagonal-2';
           }
 
