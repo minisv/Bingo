@@ -168,7 +168,7 @@
   width: var(--line-thickness);
   height: 100%;
   top: 0;
-  animation: bingo-line-appear-straight 0.5s ease-out forwards;
+  animation: bingo-line-appear-straight-vertical 0.5s ease-out forwards;
 }
 
 /* 대각선 라인 */
@@ -227,6 +227,17 @@
   100% {
     opacity: 1;
     transform: scaleX(1);
+  }
+}
+
+@keyframes bingo-line-appear-straight-vertical {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
 
